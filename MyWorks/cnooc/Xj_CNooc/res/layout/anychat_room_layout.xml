@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.cnooc.view.chat.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xj="http://schemas.android.com/apk/res/com.xj.cnooc.view"
+    android:id="@+id/id_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login"
+    android:scrollbars="none"
+    xj:rightPadding="80dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/anychat_roles_list" />
+
+        <include layout="@layout/anychat_chat_layout" />
+    </LinearLayout>
+
+</com.xj.cnooc.view.chat.SlidingMenu>

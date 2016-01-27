@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">远程支持平台</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_fault_support">FaultSupportActivity</string>
+    <string name="fault_support_list">故障支持列表</string>
+    <string name="title_activity_fault_detail">FaultDetailActivity</string>
+    <string name="title_activity_knowledge_base">KnowledgeBaseActivity</string>
+    <string name="title_activity_evaluate_support">EvaluateSupportActivity</string>
+    <string name="title_activity_knowledge_seach">KnowledgeSeachActivity</string>
+    <string name="login_et_username">用户名</string>
+    <string name="login_et_password">密    码</string>
+    <string name="login">登录</string>
+    <string name="dianwang_guzhangzhichi">电网故障支持</string>
+    <string name="pinglun_account">评论次数</string>
+    <string name="empty">没有获取到相关信息</string>
+
+    <!-- 下拉刷新，上拉加载更多 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="view_message_bar_send">"发送"</string>
+    <string name="add_avator">头像</string>
+    <string name="add_nick">昵称</string>
+    <string name="add_name">账号</string>
+    <string name="add_name_hint">请输入昵称&#8230;</string>
+    <string name="add_gender">性别</string>
+    <string name="tips">提示</string>
+    <string name="exit_app">你确定要退出？</string>
+    <string name="exit">退出</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="login_error_isNull">用户名或密码为空！</string>
+    <string name="center_title">电网故障支持</string>
+    <string name="right_title">评论次数</string>
+
+    <!-- 设置 -->
+    <string name="set_notify">接收新消息通知</string>
+    <string name="set_voice">声音提醒</string>
+    <string name="set_vibrate">震动提醒</string>
+    <string name="set_btn">悬浮按钮开关</string>
+    <string name="set_update_app">版本更新</string>
+    <string name="set_exit">退出系统</string>
+
+    <!-- 帖子详情 -->
+    <string name="fujian">附件:</string>
+    <string name="collection">收藏</string>
+    <string name="commented">评论</string>
+    <string name="commented_detail">评论详情</string>
+    <string name="send">发送</string>
+    <string name="commenting_post">请输入评论内容或回复的人</string>
+    
+    <!-- 评论 -->
+    <string name="comment_replay">回复:</string>
+    
+    <string name="title_activity_finish_fault_detail">FinishFaultDetailActivity</string>
+    <string name="title_activity_knowledge_base_detail">KnowledgeBaseDetailActivity</string>
+    <string name="title_activity_video_knowledge_base_detail">VideoKnowledgeBaseDetailActivity</string>
+    <string name="title_activity_knowledge">KnowledgeActivity</string>
+    
+    <string name="pkg_name">com.inpor.szshjzdh</string>
+	<string name="cls_name">com.inpor.fastmeeting.ui.StartTheMiddleTierActivity</string>
+</resources>

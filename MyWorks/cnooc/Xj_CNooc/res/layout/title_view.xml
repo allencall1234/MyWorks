@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:id="@+id/rellayout_title" 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue">
+        
+        <!-- <RelativeLayout
+            android:id="@+id/rellayout_back" 
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"> -->
+            
+             <ImageView
+		        android:id="@+id/iv_back"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:contentDescription="@null"
+		        android:padding="13dip"
+		        android:src="@drawable/btn_back_normal" />
+            
+	       <!--  <Button
+	            android:id="@+id/btn_back" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10dp"
+	            android:background="@drawable/btn_back_selector"/> -->
+            
+        <!-- </RelativeLayout> -->
+        
+        
+        <TextView 
+            android:id="@+id/tv_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/center_title"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+        
+        <TextView 
+            android:id="@+id/tv_right_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/right_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="16sp"/>
+        
+         <!-- <RelativeLayout
+            android:id="@+id/rellayout_setting"  
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"> -->
+            
+             <ImageView
+		        android:id="@+id/iv_setting"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:contentDescription="@null"
+		        android:padding="10dip"
+		        android:src="@drawable/btn_setting_normal" />
+        
+	      <!--   <Button
+	            android:id="@+id/btn_setting" 
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:background="@drawable/btn_setting_selector"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="15dp"
+	            android:layout_centerVertical="true"/> -->
+	        
+	     <!-- </RelativeLayout> -->
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

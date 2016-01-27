@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#0099ff</color>
+    <color name="white">#ffffff</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="fault_detail_bg">#f0f0f0</color>
+    <color name="tv_font_color">#646464</color>
+    <color name="gray">#d6d9db</color>
+    <color name="devide_line">#CBCED2</color>
+    <color name="hui">#898989</color>
+    <color name="purple">#EEE2F3</color>
+    <color name="red">#EA2E21</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#99000000</color>
+    <color name="dialog_color_title">#f82c22</color>
+    <color name="base_color_text_black">#3e3e39</color>
+    <color name="base_color_text_gray">#9fa0a0</color>
+    <color name="base_color_text_white">#ffffff</color>
+	<color name="msg_emote_divider">#ffa1a1a1</color>
+	<color name="color_theme">#489cfa</color>
+	<color name="detail_bg">#FAFAFA</color>
+	<color name="listitem_child_bg2">#E0E0E0</color>
+	<color name="chat_backgroud_color">#fff</color>
+	<color name="chat_group_group">#323232</color>
+	<color name="chat_child_online">#646464</color>
+	<color name="chat_room_color_pressed">#80CBCED2</color>
+	
+	<color name="grey">#363636</color>
+    <color name="dark_grey">#282828</color>
+    <color name="trans_dark_grey">#80282828</color>
+    <color name="trans_white">#20ffffff</color>
+    <color name="trans">#00000000</color>
+    <color name="shollow_red">#ff3333</color>
+</resources>

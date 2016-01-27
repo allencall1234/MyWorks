@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/blue"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/returnImgBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/chat_room_selector"
+            android:gravity="center"
+            android:src="@drawable/btn_back_selector" />
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ImgSwichVideo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/chat_room_selector"
+            android:src="@drawable/switchvideo"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        layout="@layout/video_session"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:background="@color/blue"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_MenuControl"
+            android:layout_width="52dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/chat_room_selector"
+            android:src="@drawable/menu_on" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans_white" />
+
+        <ImageButton
+            android:id="@+id/btn_speakControl"
+            android:layout_width="52dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/chat_room_selector"
+            android:src="@drawable/speak_on" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans_white" />
+
+        <Button
+            android:id="@+id/endCall"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/chat_room_selector"
+            android:text="@string/str_endCall"
+            android:textColor="@color/shollow_red"
+            android:textSize="23sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans_white" />
+
+        <ImageButton
+            android:id="@+id/btn_cameraControl"
+            android:layout_width="52dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/chat_room_selector"
+            android:src="@drawable/camera_on" />
+    </LinearLayout>
+
+</LinearLayout>

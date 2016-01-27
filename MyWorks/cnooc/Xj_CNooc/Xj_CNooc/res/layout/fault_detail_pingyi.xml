@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/tv_pingyi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(采纳)厂家人员5："
+        android:textColor="@color/tv_font_color"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_pingyi_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="厂家人员通过...."
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textColor="#909090"
+        />
+    
+    <TextView 
+    	android:id="@+id/tv_pingyi_date"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="right"
+    	android:text="2015-9-20 16:40"   
+    	android:textSize="12sp"
+        android:textColor="#909090"
+    	android:layout_marginBottom="10dp"
+        />
+
+</LinearLayout>

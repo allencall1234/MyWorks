@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <include
+        android:id="@+id/title" 
+        layout="@layout/title_view"/>
+    
+    <ScrollView 
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:scrollbars="none">
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    
+        <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+        
+	        <TextView
+	            android:id="@+id/tv_title" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            android:text="电网设备管理运行建议"
+	            android:textSize="18sp"
+	            android:textStyle="bold"/>
+	        
+	        <View 
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:layout_below="@id/tv_title"
+	            android:layout_marginTop="5dp"
+	            android:background="@color/gray"/>
+	        
+	        <ImageView 
+	            android:id="@+id/iv_head_img"
+	            android:layout_width="20dp"
+	            android:layout_height="20dp"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="12dp"
+	            android:scaleType="centerCrop"
+	            android:layout_below="@id/tv_title"
+	            android:src="@drawable/head_img"/>
+	        
+	        <TextView
+	            android:id="@+id/tv_poster" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/tv_title"
+	            android:layout_toRightOf="@id/iv_head_img"
+	            android:layout_marginTop="13dp"
+	            android:layout_marginLeft="5dp"
+	            android:text="发帖人：白居易"
+	            android:textSize="10dp"/>
+	        
+	        <TextView 
+	            android:id="@+id/tv_post_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/tv_title"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginTop="13dp"
+	            android:layout_marginRight="15dp"
+	            android:text="发帖时间：2015/09/10 19:39"
+	            android:textSize="10dp"/>
+	        
+	        <TextView 
+	            android:id="@+id/tv_post_content"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/tv_poster"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginRight="10dp"
+	            android:text="  2015年4月25日，尼泊尔8.1级地震和后续余震严重波及西藏自治区日喀则、阿里等地区。灾情发生后，习近平总书记立即作出重要指示，要求西藏自治区党委、政府和有关部门迅速行动、全面部署，党政军警民协调配合，全力开展救灾工作。"/>
+	        
+	        <TextView 
+	            android:id="@+id/tv_fujian"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/tv_post_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginTop="18dp"
+	            android:layout_alignParentLeft="true"
+	            android:gravity="center"
+	            android:text="@string/fujian"/>
+	        
+	        <TextView 
+	            android:id="@+id/tv_fujianName"
+	            android:layout_width="225dp"
+	            android:layout_height="35dp"
+	            android:background="@color/blue"
+	            android:layout_below="@id/tv_post_content"
+	            android:layout_toRightOf="@id/tv_fujian"
+	            android:layout_marginTop="12dp"
+	            android:layout_marginLeft="5dp"
+	            android:singleLine="true"
+	            android:ellipsize="end"
+	            android:text="无附件"
+	            android:gravity="center"
+	            android:textColor="@color/white"
+	            android:textSize="10dp"/>
+	        
+	        <ImageButton 
+	            android:id="@+id/ib_download_file_img"
+	            android:layout_width="70dp"
+	            android:layout_height="35dp"
+	            android:layout_marginTop="12dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_below="@id/tv_post_content"
+	            android:layout_alignParentRight="true"
+	            android:background="@drawable/download"
+	            android:visibility="gone"/>
+	        
+	        <ImageButton
+	            android:id="@+id/ib_collection_img" 
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:layout_below="@id/tv_fujianName"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginTop="17dp"
+	            android:layout_marginLeft="190dp"
+	            android:background="@drawable/collection"/>
+	        
+	        <TextView 
+	            android:id="@+id/tv_collect"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/tv_fujianName"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="225dp"
+	            android:layout_marginTop="25dp"
+	            android:text="@string/collection"
+	            android:textSize="12sp"/>
+	        
+	        <ImageButton
+	            android:id="@+id/ib_commented_img" 
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:layout_below="@id/tv_fujianName"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginTop="20dp"
+	            android:layout_marginRight="40dp"
+	            android:background="@drawable/commented"/>
+	        
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/tv_fujianName"
+	            android:text="@string/commented"
+	            android:layout_marginTop="23dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="10dp"
+	            android:textSize="12sp"/>
+    </RelativeLayout>
+    
+<!--     <ProgressBar
+       android:id="@+id/downloadProgress"
+       style="@android:style/Widget.ProgressBar.Horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginTop="30dp"
+       android:visibility="gone"
+       android:progressDrawable="@drawable/seekbar_img" /> -->
+    
+    <TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/commented_detail"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:textSize="18sp"/> 
+    
+    <View
+        android:id="@+id/divide_line" 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+    
+      <TextView 
+	       android:id="@+id/tv_empty"
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+	       android:layout_marginTop="70dp"
+	       android:gravity="center"
+	       android:text="@string/empty"
+	       android:textColor="#ccc"
+	       android:visibility="gone"/>
+    
+      <LinearLayout
+         android:id="@+id/linlayout1" 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+    
+	    <com.xj.cnooc.common.XListView
+	        android:id="@+id/lv_reply_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+
+	    </com.xj.cnooc.common.XListView>
+	    
+	  </LinearLayout>
+    
+    </LinearLayout>
+    
+  </ScrollView>
+    
+  <RelativeLayout
+        android:id="@+id/rl_commenting"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/gray"
+        android:visibility="gone">
+        
+        <Button
+	        android:id="@+id/btn_send"
+	        android:layout_width="60dp"
+	        android:layout_height="40dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_centerVertical="true"
+	        android:text="@string/send"
+	        android:textColor="@color/white"
+	        android:background="@drawable/btn_send_bg"/>
+         
+        <EditText
+	        android:id="@+id/et_sendmessage"
+	        android:layout_width="match_parent"
+	        android:layout_height="39dp"
+	        android:layout_toLeftOf="@id/btn_send"
+	        android:layout_marginLeft="10dp"
+	        android:background="@color/white"
+	        android:layout_centerVertical="true"
+	        android:hint="@string/commenting_post"
+	        android:paddingLeft="10dp"
+	        android:singleLine="true"
+	        android:textSize="16sp"/>
+         
+    </RelativeLayout>
+    
+</LinearLayout>

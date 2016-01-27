@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fault_detail_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_view" />
+
+    <ScrollView
+        android:id="@+id/video_knowledge_base_detail_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/video_knowledge_base_scrollView_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/video_knowledge_base_tv_originator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="视频标题：视频标题"
+                    android:textColor="@color/tv_font_color" />
+
+                <TextView
+                    android:id="@+id/video_knowledge_base_tv_faultClassify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="上传者：某某"
+                    android:textColor="@color/tv_font_color" />
+
+                <!--
+                <TextView
+                    android:id="@+id/knowledge_base_tv_faultType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/tv_font_color" />
+
+                <TextView
+                    android:id="@+id/knowledge_base_tv_belongto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/tv_font_color" />
+                -->
+
+                <TextView
+                    android:id="@+id/video_knowledge_base_tv_attachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="10dp"
+                    android:text="附件：" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/video_knowledge_base_btn_attachment_name"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:background="@color/blue"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="附件名称"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/video_knowledge_base_btn_download_attachment"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/download" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/video_knowledge_base_tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="发布时间：2015-9-23"
+                    android:textColor="@color/tv_font_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

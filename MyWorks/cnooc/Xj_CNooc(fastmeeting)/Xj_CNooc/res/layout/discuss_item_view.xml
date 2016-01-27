@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/post_view_bg">
+        
+       <!--  android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" -->
+        
+    <ImageView
+        android:id="@+id/iv_head_img" 
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/head_img"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+    
+    <TextView
+        android:id="@+id/tv_post_title" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电网设备管理运行建议"
+        android:layout_toRightOf="@id/iv_head_img"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"/>
+    
+    <TextView 
+        android:id="@+id/tv_post_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_post_title"
+        android:layout_toRightOf="@id/iv_head_img"
+        android:layout_marginLeft="10dp"
+        android:text="2013年3月9日，习近平总书记在参加十二届全国人大一次会议西藏代表团审议时明确提出“治国必治边、治边先稳藏”的重要战略思想，作出“坚定不移走有中国特色、西藏特点的发展路子，积极构建维护稳定的长效机制，加快推进西藏跨越式发展和长治久安，确保到2020年同全国一道实现全面建成小康社会宏伟目标”的重要指示。这是对中国共产党人治藏兴藏思想的继承和发展。"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+    
+ <!-- <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_post_content">  -->   
+    
+    <TextView
+        android:id="@+id/tv_poster" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_post_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="5dp"
+        android:text="发帖人：李白"
+        android:textSize="10sp"/>
+    
+     <TextView
+        android:id="@+id/tv_post_time" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_post_content"
+        android:layout_marginRight="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="5dp"
+        android:text="发帖时间：2015/09/08 18:50"
+        android:textSize="10sp"/>
+    
+    <TextView 
+        android:id="@+id/tv_pinglun_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_post_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="5dp"
+        android:text="评论(21)条"
+        android:textSize="10sp"/>
+    
+      </RelativeLayout>
+
+</RelativeLayout>

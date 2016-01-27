@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KnowledgeBaseActivity" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_view" />
+
+    <RelativeLayout
+        android:id="@+id/seacher_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fault_detail_bg"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp" >
+
+        <EditText
+            android:id="@+id/et_seacher"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/seacher_edittext_bg"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="搜索" />
+    </RelativeLayout>
+
+    <com.xj.cnooc.common.XListView
+        android:id="@+id/knowledge_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.xj.cnooc.common.XListView>
+
+</LinearLayout>

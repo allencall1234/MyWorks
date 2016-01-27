@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple"
+    android:layout_marginBottom="5dp">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/post_view_bg"
+        android:layout_marginTop="10dp">
+        
+        <!-- android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"-->
+        
+        <TextView
+	        android:id="@+id/tv_discussion_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="综保技术讨论区"
+	        android:textSize="18sp"/>
+    
+        <TextView
+	        android:id="@+id/tv_moderator" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:gravity="center"
+	        android:text="版主：马飞腾"
+	        android:textColor="@color/hui"/>
+        
+        <View 
+            android:id="@+id/divide_line"
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_below="@id/tv_moderator"
+	        android:background="@color/devide_line"/>
+        
+        <TextView
+            android:id="@+id/tv_discussion_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="根据国务院办公厅发布的节假日安排显示，今年中秋节正逢新历9月27日（周日），因此中秋节放假时间为：9月26日(星期六)、9月27日中秋节(星期天，法定节假日)，共两天。而今年国庆节10月1日至7日放假调休，共7天。10月10日(星期六)上班。根据国务院办公厅发布的节假日安排显示，今年中秋节正逢新历9月27日（周日），因此中秋节放假时间为：9月26日(星期六)、9月27日中秋节(星期天，法定节假日)，共两天。而今年国庆节10月1日至7日放假调休，共7天。10月10日(星期六)上班。"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/divide_line"/>
+        
+        <RelativeLayout
+            android:id="@+id/rellayout1" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_discussion_introduce">
+        
+        <TextView
+            android:id="@+id/tv_post_time" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="5dp"
+            android:textSize="12sp"
+            android:text="发布时间：2015/09/01 18:29"/>
+        
+        <TextView 
+            android:id="@+id/tv_post_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="5dp"
+            android:text="贴数：(8)条"
+            android:textSize="12sp"/>
+        
+        </RelativeLayout>
+        
+        <RelativeLayout
+	        android:id="@+id/layout_count"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@id/rellayout1"
+	        android:layout_alignTop="@id/rellayout1"
+	        android:layout_marginRight="10dp"
+	        android:layout_alignParentRight="true"
+	        android:visibility="gone">
+
+	    <ImageView
+		     android:id="@+id/iv_count"
+		     android:layout_width="21dp"
+		     android:layout_height="21dp"
+		     android:src="@drawable/mini_red_dot"/>
+	    
+	     <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="99" 
+                android:textColor="@color/white"/>
+	    
+       </RelativeLayout>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

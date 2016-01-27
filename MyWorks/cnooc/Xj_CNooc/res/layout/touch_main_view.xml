@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res/com.xj.cnooc.view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.xj.cnooc.common.TouchLayout
+        android:id="@+id/main_circle_layout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        circle:circleBackground="@drawable/icon_center"
+        circle:firstChildPosition="South"
+        circle:isRotating="true"
+        circle:rotateToCenter="true" >
+
+        <!-- circle:circleBackground="@drawable/green"  > -->
+
+        <com.xj.cnooc.common.TouchItemView
+            android:id="@+id/main_touch_chat"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/icon_chat" />
+
+        <com.xj.cnooc.common.TouchItemView
+            android:id="@+id/main_touch_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_evaluate" />
+
+        <com.xj.cnooc.common.TouchItemView
+            android:id="@+id/main_touch_bbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_bbs" />
+
+        <com.xj.cnooc.common.TouchItemView
+            android:id="@+id/main_touch_library"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_library" />
+
+        <com.xj.cnooc.common.TouchItemView
+            android:id="@+id/main_touch_fault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_fault" />
+
+        <!-- <com.xj.cnooc.common.TouchItemView -->
+        <!-- android:id="@+id/main_wordpress_image" -->
+        <!-- circle:name="@string/wordpress" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/icon_wordpress" /> -->
+    </com.xj.cnooc.common.TouchLayout>
+
+</RelativeLayout>

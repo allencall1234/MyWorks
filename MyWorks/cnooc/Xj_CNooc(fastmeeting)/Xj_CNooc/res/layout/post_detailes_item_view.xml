@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:layout_width="match_parent"
+	 android:layout_height="match_parent" 
+	 android:orientation="vertical">
+	 
+	<RelativeLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="5dp">
+	    
+	    <ImageView
+	        android:id="@+id/iv_head_img" 
+	        android:layout_width="60dp"
+	        android:layout_height="60dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginTop="10dp"
+	        android:scaleType="centerCrop"
+	        android:src="@drawable/head_img"/>
+	    
+	    <TextView 
+	        android:id="@+id/tv_replyer"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/iv_head_img"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="习近平"
+	        android:textSize="16sp"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_reply_content" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/tv_replyer"
+	        android:layout_toRightOf="@id/iv_head_img"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="10dp"
+	        android:text="电网设备管理建议"
+	        android:textSize="18sp"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_reply_time" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/tv_reply_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_alignParentRight="true"
+	        android:text="评论时间:2015/09/08 16:19"
+	        android:textSize="12sp"/>
+	    
+	    <!-- <TextView
+	        android:id="@+id/tv_reply_account" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/tv_reply_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:textSize="12sp"
+	        android:text="回复(21)"/>
+	 -->
+	  </RelativeLayout>
+</LinearLayout>

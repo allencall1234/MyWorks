@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+layer-list : 标签中的子节点会以叠加的方式来展现效果
+
+ -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 背景图 -->
+	<item android:id="@android:id/background"
+		  android:drawable="@drawable/line2" />
+	<!-- 进度能量图 -->
+	<item android:id="@android:id/progress" 
+	      android:drawable="@drawable/aa" />
+</layer-list>

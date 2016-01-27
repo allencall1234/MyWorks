@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/hall_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/btn_back_selector"
+        android:drawablePadding="10dp"
+        android:text="房间列表"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" >
+
+        <TableRow android:layout_margin="15dp" >
+
+            <LinearLayout
+                android:id="@+id/chat_room_1"
+                style="@style/AnyChatItem" >
+
+                <ImageView
+                    style="@style/AnyChatRoom"
+                    android:src="@drawable/chat_room_logo" />
+
+                <TextView
+                    style="@style/AnyChatRoom.Text"
+                    android:text="房间1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_room_2"
+                style="@style/AnyChatItem" >
+
+                <ImageView
+                    style="@style/AnyChatRoom"
+                    android:src="@drawable/chat_room_logo" />
+
+                <TextView
+                    style="@style/AnyChatRoom.Text"
+                    android:text="房间2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_room_3"
+                style="@style/AnyChatItem" >
+
+                <ImageView
+                    style="@style/AnyChatRoom"
+                    android:src="@drawable/chat_room_logo" />
+
+                <TextView
+                    style="@style/AnyChatRoom.Text"
+                    android:text="房间3" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow android:layout_margin="15dp" >
+
+            <LinearLayout
+                android:id="@+id/chat_room_4"
+                style="@style/AnyChatItem" >
+
+                <ImageView
+                    style="@style/AnyChatRoom"
+                    android:src="@drawable/chat_room_logo" />
+
+                <TextView
+                    style="@style/AnyChatRoom.Text"
+                    android:text="房间4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_room_5"
+                style="@style/AnyChatItem" >
+
+                <ImageView
+                    style="@style/AnyChatRoom"
+                    android:src="@drawable/chat_room_logo" />
+
+                <TextView
+                    style="@style/AnyChatRoom.Text"
+                    android:text="房间5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_room_6"
+                style="@style/AnyChatItem" >
+
+                <ImageView
+                    style="@style/AnyChatRoom"
+                    android:src="@drawable/chat_room_logo" />
+
+                <TextView
+                    style="@style/AnyChatRoom.Text"
+                    android:text="房间6" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow android:layout_margin="15dp" >
+
+            <LinearLayout
+                android:id="@+id/chat_room_7"
+                style="@style/AnyChatItem" >
+
+                <ImageView
+                    style="@style/AnyChatRoom"
+                    android:src="@drawable/chat_room_logo" />
+
+                <TextView
+                    style="@style/AnyChatRoom.Text"
+                    android:text="房间7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_room_8"
+                style="@style/AnyChatItem" >
+
+                <ImageView
+                    style="@style/AnyChatRoom"
+                    android:src="@drawable/chat_room_logo" />
+
+                <TextView
+                    style="@style/AnyChatRoom.Text"
+                    android:text="房间8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_room_9"
+                style="@style/AnyChatItem" >
+
+                <ImageView
+                    style="@style/AnyChatRoom"
+                    android:src="@drawable/chat_room_custom" />
+
+                <TextView
+                    style="@style/AnyChatRoom.Text"
+                    android:text="自定义" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/init_message"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="正在初始化聊天室..." />
+    </RelativeLayout>
+
+</LinearLayout>

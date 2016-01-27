@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="base_action_bar_title_size">22.0sp</dimen>
+    <dimen name="base_action_bar_height">48.0dip</dimen>
+    <dimen name="base_scrollview_top_height">50.0dip</dimen>
+    <dimen name="margin_chat_top">5.0dip</dimen>
+    <dimen name="message_top_height">60dp</dimen>
+    <dimen name="size_icon_app">60dp</dimen>
+
+</resources>
