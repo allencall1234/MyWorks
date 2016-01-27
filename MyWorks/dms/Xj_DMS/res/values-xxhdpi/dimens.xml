@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="graph_title_textsize">20sp</dimen>
+    <dimen name="graph_small_textsize">12sp</dimen>
+    <dimen name="graph_view_height">285dp</dimen>
+
+</resources>

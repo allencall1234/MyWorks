@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="21dp"
+        android:background="#DBDBDB"/>
+    
+    <TextView
+        android:id="@+id/tv_dutyPersonnel" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="当班人员 : 张三"
+        android:textSize="16sp"
+        android:textColor="@color/tv_title_color"
+        android:drawablePadding="3dp"
+        android:drawableLeft="@drawable/personnel"/>
+
+    <TextView
+        android:id="@+id/tv_schedulePersonnel" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="调度人员 : 李四"
+        android:textSize="16sp"
+        android:textColor="@color/tv_title_color"
+        android:drawablePadding="3dp"
+        android:drawableLeft="@drawable/personnel"/>
+    
+     <!-- 标签  -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0"
+	        android:layout_marginLeft="12dp"
+	        android:layout_marginTop="14dp"
+	        android:gravity="center"
+	        android:text="@string/sign"
+	        android:textSize="16sp"
+	        android:textColor="@color/tv_title_color"
+	        android:drawablePadding="3dp"
+	        android:drawableLeft="@drawable/sign"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_sign" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="14dp"
+	        android:paddingLeft="5dp"
+	        android:text=" JZ51S\A\HMI-dISC"
+	        android:textSize="16sp"
+	        android:textColor="@color/tv_title_color"/>
+	    
+	</LinearLayout>
+	    
+    <TextView
+        android:id="@+id/tv_happenTime" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="发生时间 : 2015-10-23 00:00:00"
+        android:textSize="16sp"
+        android:textColor="@color/tv_title_color"
+        android:drawablePadding="3dp"
+        android:drawableLeft="@drawable/time"/>
+    
+    <!-- 故障名称  -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0"
+	        android:layout_marginLeft="14dp"
+	        android:layout_marginTop="14dp"
+	        android:gravity="center"
+	        android:text="@string/faultName"
+	        android:textSize="16sp"
+	        android:textColor="@color/tv_title_color"
+	        android:drawablePadding="3dp"
+	        android:drawableLeft="@drawable/fault_name"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_faultName" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        android:layout_marginTop="14dp"
+	        android:layout_marginRight="10dp"
+	        android:paddingLeft="5dp"
+	        android:text=" 发电机顶轴油泵运行发电机顶轴油泵运行"
+	        android:textSize="16sp"
+	        android:textColor="@color/tv_title_color"/>
+        
+    </LinearLayout>
+    
+    <!-- 发生原因  -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0"
+	        android:layout_marginLeft="12dp"
+	        android:layout_marginTop="14dp"
+	        android:gravity="center"
+	        android:text="@string/happenCauses"
+	        android:textSize="16sp"
+	        android:textColor="@color/tv_title_color"
+	        android:drawablePadding="3dp"
+	        android:drawableLeft="@drawable/happen_causes"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_happenCauses" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        android:layout_marginTop="14dp"
+	        android:layout_marginRight="10dp"
+	        android:paddingLeft="5dp"
+	        android:text=" 发电机顶轴油泵运行发电机顶轴油泵运行"
+	        android:textSize="16sp"/>
+	    
+	</LinearLayout>
+	
+    <!-- 发生位置  -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_weight="0"
+	       android:layout_marginTop="14dp"
+	       android:layout_marginLeft="12dp"
+	       android:gravity="center"
+	       android:text="@string/happenLocation"
+	       android:textSize="16sp"
+	       android:textColor="@color/tv_title_color"
+	       android:drawablePadding="3dp"
+	       android:drawableLeft="@drawable/happen_location"/>
+	       
+        <TextView
+	       android:id="@+id/tv_happenLocation" 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_weight="1.0"
+	       android:layout_marginTop="14dp"
+	       android:layout_marginRight="10dp"
+	       android:paddingLeft="5dp"
+	       android:text=" 发电机顶轴油泵运行发电机顶轴油泵运行"
+	       android:textSize="16sp"/>
+	       
+    </LinearLayout>
+    
+    <!-- 故障索引  -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0"
+	        android:layout_marginLeft="8dp"
+	        android:layout_marginTop="14dp"
+	        android:gravity="center"
+	        android:text="@string/faultIndex"
+	        android:textSize="16sp"
+	        android:textColor="@color/tv_title_color"
+	        android:drawablePadding="3dp"
+	        android:drawableLeft="@drawable/fault_index"/>
+	    
+	    <TextView 
+	        android:id="@+id/tv_faultIndex" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="14dp"
+	        android:layout_marginRight="10dp"
+	        android:paddingLeft="5dp"
+	        android:layout_weight="1.0"
+	        android:text=" 发电机顶轴油泵运行发生发电机顶轴油泵运行发生"
+	        android:textSize="16sp"
+	        android:textColor="@color/tv_title_color"/>
+        
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tv_solveTime" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="解决时间 : 2015-10-23 00:00:00"
+        android:textSize="16sp"
+        android:textColor="@color/tv_title_color"
+        android:drawablePadding="3dp"
+        android:drawableLeft="@drawable/time"/>
+    
+    <!-- 处理措施  -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0"
+	        android:layout_marginLeft="12dp"
+	        android:layout_marginTop="14dp"
+	        android:gravity="center"
+	        android:text="@string/dealwithMeasures"
+	        android:textSize="16sp"
+	        android:textColor="@color/tv_title_color"
+	        android:drawablePadding="3dp"
+	        android:drawableLeft="@drawable/dealwith_measures"/>
+        
+	    <TextView
+	        android:id="@+id/tv_dealwithMeasures" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        android:layout_marginTop="14dp"
+	        android:layout_marginRight="10dp"
+	        android:paddingLeft="5dp"
+	        android:text=" 发电机顶轴油泵运行发生发电机顶轴油泵运行发生"
+	        android:textSize="16sp"
+	        android:textColor="@color/tv_title_color"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
+        android:background="#DBDBDB"/>
+    
+</LinearLayout>

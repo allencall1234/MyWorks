@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="45dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/logo_unapproval"
+            android:background="@drawable/radio_btn_selector"
+            android:button="@null"
+            android:checked="true"
+            android:text="待审任务"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radio_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="45dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/logo_approvaled"
+            android:background="@drawable/radio_btn_selector"
+            android:button="@null"
+            android:text="已审任务"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <com.xj.dms.common.XListView
+        android:id="@+id/schedule_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:scrollbars="none"
+        android:visibility="gone">
+    </com.xj.dms.common.XListView>
+	<TextView 
+	    android:id="@+id/empty_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:text="@string/empty_message"
+	    android:gravity="center"
+	    android:textSize="15sp"
+	    android:textColor="#ccc"
+	    android:visibility="gone"/>
+</LinearLayout>

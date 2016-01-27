@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:paddingBottom="15dp"
+    android:background="@drawable/judge_net_dialog_bg"
+    >
+    
+	<TextView 
+	    android:id="@+id/error"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="错误"
+		android:textSize="16sp"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+	    />
+	
+	<View 
+	    android:id="@+id/dialog_line"
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="#c0c0c0"
+	    android:layout_below="@id/error"
+	    />
+	
+	<TextView 
+	    android:id="@+id/net_reason"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="连接服务器失败，可能原因有：\n.未连接网络\n.网络不稳定\n.安全软件禁止访问网络"
+	    android:textSize="14sp"
+	    android:textColor="#666666"
+	    android:layout_below="@id/dialog_line"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="5dp"
+	    />
+	
+	<Button 
+	    android:id="@+id/dialog_btn_confirm"
+	    android:layout_width="match_parent"
+	    android:layout_height="30dp"
+	    android:text="确定"
+	    android:textColor="#01A0E9"
+	    android:textSize="14sp"
+	    android:layout_below="@id/net_reason"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="15dp"
+	    android:layout_marginLeft="30dp"
+	    android:layout_marginRight="30dp"
+	    android:background="@drawable/dialog_btn_confirm_bg"
+	    />
+    
+    
+</RelativeLayout>

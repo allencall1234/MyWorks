@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_search_layout" >
+    </include>
+
+    <com.xj.dms.common.XListView
+        android:id="@+id/schedule_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+    </com.xj.dms.common.XListView>
+    
+    <TextView 
+	    android:id="@+id/empty_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:text="@string/empty_message"
+	    android:gravity="center"
+	    android:textSize="15sp"
+	    android:textColor="#ccc"
+	    android:visibility="gone"/>
+
+</LinearLayout>

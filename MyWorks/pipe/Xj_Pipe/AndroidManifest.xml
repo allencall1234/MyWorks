@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xj_pipe.view"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 系统对话框权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.xj_pipe.base.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 欢迎界面 -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xj_pipe.base.BaseActivity"
+            android:label="@string/title_activity_base" >
+        </activity>
+
+        <!-- 欢迎界面 -->
+        <!-- <activity android:name="com.xj_pipe.view.WelcomeActivi"></activity> -->
+
+
+        <!-- 引导界面 -->
+        <activity android:name="com.xj_pipe.view.GuideActivity" >
+        </activity>
+
+        <!-- 登录界面 -->
+        <activity android:name="com.xj_pipe.view.LoginActivity" >
+        </activity>
+
+        <!-- 主菜单界面 -->
+        <activity android:name="com.xj_pipe.view.MainActivity" >
+        </activity>
+
+        <!-- 消息界面 -->
+        <activity
+            android:name=".MessageActivity"
+            android:label="@string/title_activity_message" >
+        </activity>
+
+        <!-- 事故报修界面 -->
+        <activity
+            android:name=".AccidentHandlingActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+        </activity>
+
+        <!-- 展示照片界面 -->
+        <activity android:name=".PhotoActivity" >
+        </activity>
+
+        <!-- 巡检详情界面 -->
+        <activity android:name="com.xj_pipe.view.InspectionDetailsActivity" >
+        </activity>
+
+        <!-- 消息详情界面 -->
+        <activity
+            android:name=".MessageDetailActivity"
+            android:label="@string/title_activity_message_detail" >
+        </activity>
+
+        <!-- 发送消息界面 -->
+        <activity
+            android:name=".SendMessageActivity"
+            android:label="@string/title_activity_send_message" >
+        </activity>
+
+        <!-- 施工反馈界面 -->
+        <activity
+            android:name=".BuildActivity"
+            android:label="@string/title_activity_build" >
+        </activity>
+
+        <!-- 巡检点签到界面 -->
+        <activity android:name=".InspectionSignInActivity" >
+        </activity>
+
+        <!-- 事故报修历史记录详情界面 -->
+        <activity android:name="com.xj_pipe.view.AccidentHistoryDetailsActivity" >
+        </activity>
+        <!--  -->
+        <activity android:name="com.xj_pipe.view.InspectionMainActivity" >
+        </activity>
+        <!-- 巡检提交 -->
+        <activity android:name="com.xj_pipe.view.InspectionSubmitActivity" >
+        </activity>
+        <activity android:name="com.xj_pipe.view.ActivityFeedBack" >
+        </activity>
+        <activity android:name="com.xj_pipe.view.ActivityEmergency" >
+        </activity>
+        <activity android:name="com.xj_pipe.view.ActivityRepair" >
+        </activity>
+        <activity android:name="com.xj_pipe.view.ActivityInspection"
+            android:launchMode="singleTask" >
+        </activity>
+
+        <service android:name="com.xj_pipe.view.InspectionService" >
+        </service>
+    </application>
+
+</manifest>

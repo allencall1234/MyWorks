@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="model_1">#EBDD00</color>
+    <color name="model_2">#E97017</color>
+    <color name="model_3">#DC3E18</color>
+    <color name="model_4">#9D17A6</color>
+    <color name="model_5">#881501</color>
+    <color name="model_6">#B66133</color>
+    <color name="model_7">#B72458</color>
+    <color name="model_8">#009377</color>
+    <color name="model_9">#339933</color>
+    <color name="model_10">#336666</color>
+    <color name="model_11">#33ff99</color>
+    <color name="model_12">#99ccff</color>
+    <color name="graph_bottom_text_color">#909090</color>
+    <color name="blue">#0099ff</color>
+    <color name="white">#ffffff</color>
+    <color name="light_grey">#e0e0e0</color>
+    <color name="orange">#ff6600</color> 
+    <color name="radio_press">#0099ff</color>
+    <color name="text_color">#000</color>
+    <color name="text_bule">#013F80</color>
+    <color name="login_bg_color">#282A2D</color>
+    <color name="tv_text_color">#646464</color>
+    <color name="tv_back_color">#60646A</color>
+    <color name="transparent">#00000000</color>
+    <color name="tv_title_color">#323232</color>
+    
+    
+    <color name="radio_check">#017680</color> 
+    <color name="radio_normal">#C2C2C2</color>
+    <color name="green">#01806A</color>
+</resources>

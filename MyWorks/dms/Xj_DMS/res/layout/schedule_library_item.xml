@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="50dp" >
+
+    <TextView
+        android:id="@+id/tv_knowledgeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxWidth="250dp"
+        android:text="标题"
+        android:textColor="#323232"
+        android:textSize="15sp" 
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/knowledge_base"/>
+    
+    <TextView 
+        android:id="@+id/tv_content"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#646464"
+	    android:textSize="14sp"
+	    android:text="内容........"
+	    android:paddingLeft="2dp"
+	    android:gravity="center"
+	    android:layout_below="@id/tv_knowledgeTitle"
+	    android:layout_marginTop="10dp"/>
+    
+	<TextView 
+	    android:id="@+id/tv_type"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="所属装置：电站"
+	    android:textSize="11sp"
+	    android:textColor="#909090"
+	    android:paddingLeft="2dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_below="@id/tv_content"
+	    android:layout_marginBottom="5dp"/>
+	
+	<TextView 
+	    android:id="@+id/tv_time"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="2015-10-22"
+	    android:textSize="11sp"
+	    android:textColor="#909090"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@id/tv_type"/>
+</RelativeLayout>

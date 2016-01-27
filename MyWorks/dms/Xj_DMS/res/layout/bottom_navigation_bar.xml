@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@drawable/navigation_bar_bg"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+
+    <Button
+        android:id="@+id/btn_power_network_information"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/banner_bg"
+        android:drawableTop="@drawable/network_info_s"
+        android:paddingTop="10dp"
+        android:text="电网信息"
+        android:textColor="@color/text_bule"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btn_notice"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:drawableTop="@drawable/notice_n"
+        android:paddingTop="10dp"
+        android:text="通知公告"
+        android:textColor="@color/tv_text_color"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btn_power_network_plan"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:drawableTop="@drawable/netwpok_plan_n"
+        android:paddingTop="10dp"
+        android:text="电网计划"
+        android:textColor="@color/tv_text_color"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btn_workdesk"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:drawableTop="@drawable/work_desk_n"
+        android:paddingTop="10dp"
+        android:text="工作台"
+        android:textColor="@color/tv_text_color"
+        android:textSize="13sp" />
+
+</LinearLayout>

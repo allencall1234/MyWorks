@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xj.dms.view.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/radio_left_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:background="@drawable/radio_bg_selector" >
+
+            <TextView
+                android:id="@+id/radio_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:checked="true"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/logo_month_selector"
+                android:gravity="center"
+                android:text="按月份统计"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/radio_right_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_bg_selector" >
+
+            <TextView
+                android:id="@+id/radio_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:checked="true"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/logo_type_selector"
+                android:gravity="center"
+                android:text="按类型统计"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        />
+
+    <com.xj.dms.view.schedule.GraphAxisView
+        android:id="@+id/axis_view"
+        android:layout_width="50dp"
+        android:layout_height="@dimen/graph_view_height"
+        android:layout_marginTop="90dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/month_pager"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/graph_view_height"
+        android:layout_marginTop="90dp"
+        android:layout_toRightOf="@id/axis_view"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/type_pager"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/graph_view_height"
+        android:layout_marginTop="90dp"
+        android:layout_toRightOf="@id/axis_view"
+        android:visibility="gone" />
+
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="180dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_margin="20dp">
+	    <RelativeLayout
+	        android:id="@+id/bottomContainer" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        >
+	    </RelativeLayout>
+	</ScrollView>
+</RelativeLayout>

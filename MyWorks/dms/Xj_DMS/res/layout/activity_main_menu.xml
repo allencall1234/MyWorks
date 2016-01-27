@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 用户登录后进入界面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+        
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp">
+    	
+        <LinearLayout
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+          	android:gravity="center_horizontal"
+          	android:orientation="vertical"
+          	android:layout_weight="1.0"> 
+          	              	
+            <ImageView
+        		android:id="@+id/iv_schedule"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginTop="5dp"        	     	
+    			android:scaleType="matrix"
+    			android:clickable="true"
+    			android:src="@drawable/schedule_management_pressed" />
+            
+            <TextView
+	            android:id="@+id/tv_diaodu_management"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="@string/public_title"
+	            android:textColor="#013f80"
+	            android:textSize="13sp"/>              
+    	 </LinearLayout>
+    	 
+         <LinearLayout
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+          	android:gravity="center_horizontal"
+          	android:orientation="vertical"
+          	android:layout_weight="1.0"> 
+          	              	
+            <ImageView
+        		android:id="@+id/iv_knowledgeBase"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"        	     	
+    			android:scaleType="matrix"
+    			android:layout_marginTop="5dp" 
+    			android:src="@drawable/knowledge_base_normal" />
+            
+            <TextView
+                android:id="@+id/tv_knowledge_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/knowledge_base"
+                android:textColor="@color/tv_text_color"
+                android:textSize="13sp"/>              
+    	 </LinearLayout>
+        
+         <LinearLayout
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+          	android:gravity="center_horizontal"
+          	android:orientation="vertical"
+          	android:layout_weight="1.0"> 
+          	              	
+            <ImageView
+        		android:id="@+id/iv_faultTrace"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"        	     	
+    			android:scaleType="matrix"
+    			android:layout_marginTop="5dp" 
+    			android:src="@drawable/fault_trace_normal" />
+            
+            <TextView
+                android:id="@+id/tv_fault_trace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/fault_trace"
+                android:textColor="@color/tv_text_color"
+                android:textSize="13sp"/>              
+    	 </LinearLayout>
+
+    </LinearLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linearLayout1">
+    </android.support.v4.view.ViewPager>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/viewPager"
+        android:background="#6C6E6D"/>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <!-- 设置背景填充色为黑色 -->
+            <solid android:color="#212224" />
+        </shape>
+    </item>
+
+</selector>

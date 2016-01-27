@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">海油DMS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="empty_message">没有获取到相关信息!</string>
+
+    <string-array name="month_titles">
+        <item>一月份</item>
+        <item>二月份</item>
+        <item>三月份</item>
+        <item>四月份</item>
+        <item>五月份</item>
+        <item>六月份</item>
+        <item>七月份</item>
+        <item>八月份</item>
+        <item>九月份</item>
+        <item>十月份</item>
+        <item>十一月份</item>
+        <item>十二月份</item>
+    </string-array>
+    <string-array name="types">
+        <item>SZ36-1WHPL</item>
+        <item>SZ36-1EDP</item>
+        <item>SZ36-1CEP</item>
+        <item>LD-101</item>
+        <item>合计</item>
+    </string-array>
+    <string-array name="task_types">
+        <item>应急任务</item>
+        <item>设备切换</item>
+        <item>case管理</item>
+        <item>并网操作</item>
+        <item>大负载启动</item>
+        <item>经济调度管理</item>
+        <item>备用机组启动</item>
+    </string-array>
+    <string-array name="states">
+        <item>待制定</item>
+        <item>待审批</item>
+        <item>待执行</item>
+        <item>已执行</item>
+        <item>已驳回</item>
+        <item>已取消</item>
+        <item>其他</item>
+    </string-array>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_alter_user_info">AlterUserInfoActivity</string>
+    <string name="title_activity_notice_plan_detail">NoticePlanDetailActivity</string>
+    <string name="title_activity_version_update">VersionUpdateActivity</string>
+
+    <!-- 公共标题 -->
+    <string name="public_title">调度管理</string>
+    <string name="knowledge_base">知识库</string>
+    <string name="fault_trace">故障追溯</string>
+
+    <!-- 调度管理 -->
+    <string name="task_query">任务查询</string>
+    <string name="task_approval">任务审批</string>
+    <string name="task_statistical">任务统计</string>
+    <string name="more">+</string>
+
+    <!-- 下拉刷新，上拉加载更多 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!-- 任务审批 -->
+    <string name="pending_task">待审任务</string>
+    <string name="un_pending_task">已审任务</string>
+
+    <!-- 调度任务信息详情 -->
+    <string name="basic_information_task">任务基本信息</string>
+    <string name="person_date_information">人员日期信息</string>
+    <string name="approval_file">审        批</string>
+    <string name="task_description">任务描述</string>
+    <string name="fujian">附件 : </string>
+    <string name="developer_opinion">制定人意见</string>
+    <string name="weixiujiandu_opinion">维修监督审批意见</string>
+    <string name="dianlijiandu_opinion">电力监督审批意见</string>
+    <string name="ludilingdao_opinion">陆地领导审批意见</string>
+    <string name="agree">同意</string>
+    <string name="rejected">驳回</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+
+    <!-- 登录 -->
+    <string name="username">用户名：</string>
+    <string name="back">返回</string>
+    <string name="login_my_workdesk">登录我的工作台</string>
+    <string name="remerber_usernameAndpwd">记住用户名及密码</string>
+    <string name="title_activity_more">MoreActivity</string>
+    <string name="tv_more">更多</string>
+
+    <!-- 电网知识库明细 -->
+    <string name="content">内      容 : </string>
+
+    <!-- shutdown报告详情 -->
+    <string name="sign">标签 : </string>
+    <string name="faultName">故障名称 : </string>
+    <string name="happenCauses">发生原因 : </string>
+    <string name="happenLocation">发生位置 : </string>
+    <string name="faultIndex">故障索引 : </string>
+    <string name="dealwithMeasures">处理措施 : </string>
+	
+    <string name="task_statistics_title">%1$d年1-12月份共%2$d条</string>
+</resources>

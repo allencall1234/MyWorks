@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/public_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="26dp"
+            android:orientation="vertical" >
+
+            <!-- 任务基本信息 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/green"
+                android:drawableLeft="@drawable/task_information"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/basic_information_task"
+                android:textColor="#EAFFFB"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_taskName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="14dp"
+                    android:text="  任务名称:调度信息管理"
+                    android:textColor="@color/tv_title_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_taskNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="14dp"
+                    android:text="  任务编号:JZZ5-1CEP151008X101"
+                    android:textColor="@color/tv_title_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_taskType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="14dp"
+                    android:text="  任务类型:应急任务"
+                    android:textColor="@color/tv_title_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_belongto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="14dp"
+                    android:text="  所属装置:JZ25-1CEP"
+                    android:textColor="@color/tv_title_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- 人员日期信息 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/green"
+                android:drawableLeft="@drawable/person_date_information"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/person_date_information"
+                android:textColor="#EAFFFB"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_applicant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="14dp"
+                    android:text="  申请人员:zhangsan"
+                    android:textColor="@color/tv_title_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_applicationDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="14dp"
+                    android:text="  申请日期:2015-10-10 11:11:10"
+                    android:textColor="@color/tv_title_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_developStaff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="14dp"
+                    android:text="  制定人员:zhangsan"
+                    android:textColor="@color/tv_title_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_setDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="14dp"
+                    android:text="  制定日期:2015-10-10 11:11:46"
+                    android:textColor="@color/tv_title_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_planStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="14dp"
+                    android:text="  计划开始:2015-10-08"
+                    android:textColor="@color/tv_title_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_planEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="14dp"
+                    android:text="  计划完成:2015-10-10"
+                    android:textColor="@color/tv_title_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- 任务描述 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/green"
+                android:drawableLeft="@drawable/task_description"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/task_description"
+                android:textColor="#EAFFFB"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_taskDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="14dp"
+                    android:singleLine="false"
+                    android:text="  任务描述。。。同意。。。发到您的非法购买价格还没搞好，回家，好，大傻瓜都符合快睡吧开始吧个部分了避风港 放过你的；仿您的你； ；都发给你；的你；个；能否你；该妇女； 同意。。。发到您的非法购买价格还没搞好，回家，好，大傻瓜都符合快睡吧开始吧个部分了避风港 放过你的；仿您的你； ；都发给你；的你；个；能否你；该妇女； "
+                    android:textColor="@color/tv_title_color"
+                    android:textSize="15sp" />
+
+                <!-- 附件 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/attachment"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/fujian"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_attachmentNname"
+                        android:layout_width="200dp"
+                        android:layout_height="27dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#01AE5A"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/fujian"
+                        android:textColor="#EBFFF4"
+                        android:textSize="15sp" />
+
+                    <!--
+                        <Button
+	                    android:id="@+id/btn_download"
+	                    android:layout_width="60dp"
+	                    android:layout_height="35dp"
+	                    android:layout_marginTop="3dp"
+	                    android:layout_marginLeft="20dp"
+	                    android:layout_marginRight="10dp"
+	                    android:background="@drawable/download" />
+                    -->
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--
+             <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+             android:orientation="vertical">
+            -->
+            <!-- 制定人意见 -->
+
+            <TextView
+                android:id="@+id/tv_developer"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/green"
+                android:drawableLeft="@drawable/approval_opinion"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/developer_opinion"
+                android:textColor="#EAFFFB"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_developer_opinion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="14dp"
+                    android:text="  内容..."
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!--
+               <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginTop="5dp"
+             android:orientation="vertical">
+            -->
+            <!-- 维修监督审批意见 -->
+
+            <TextView
+                android:id="@+id/tv_weixiujiandu"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/green"
+                android:drawableLeft="@drawable/approval_opinion"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/weixiujiandu_opinion"
+                android:textColor="#EAFFFB"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_weixiujiandu_opinion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="14dp"
+                    android:text="  维修监督同意"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!--
+               <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+             android:orientation="vertical">
+            -->
+            <!-- 电力监督审批意见 -->
+
+            <TextView
+                android:id="@+id/tv_dianlijiandu"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/green"
+                android:drawableLeft="@drawable/approval_opinion"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/dianlijiandu_opinion"
+                android:textColor="#EAFFFB"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_dianlijiandu_opinion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="14dp"
+                    android:text="  电力监督同意"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!--
+             <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+             android:orientation="vertical">
+            -->
+            <!-- 陆地领导审批意见 -->
+
+            <TextView
+                android:id="@+id/tv_ludijiandu"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/green"
+                android:drawableLeft="@drawable/approval_opinion"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/ludilingdao_opinion"
+                android:textColor="#EAFFFB"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_ludijiandu_opinion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="14dp"
+                    android:paddingBottom="10dp"
+                    android:text="  陆地监督同意"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_approval"
+                android:layout_width="195dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_approval"
+                android:text="@string/approval_file"
+                android:textColor="#D3E8FD"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

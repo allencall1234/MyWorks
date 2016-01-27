@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    
+    <TextView 
+	    android:id="@+id/tv_taskState"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:text="待审批"
+	    android:textSize="11sp"
+	    android:gravity="center"
+	    android:textColor="@color/white"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:background="@drawable/orange_bg"
+	    android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tv_taskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_taskState"
+        android:layout_marginTop="5dp"
+        android:maxWidth="250dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:textColor="@color/tv_title_color"
+        android:text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+        android:textSize="15sp" 
+        android:drawablePadding="3dp"
+        android:drawableLeft="@drawable/task_query"/>
+    
+	<TextView 
+	    android:id="@+id/tv_taskType"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="5dp"
+	    android:gravity="center_vertical"
+	    android:singleLine="true"
+	    android:ellipsize="end"
+	    android:text="任务类型：应急任务"
+	    android:textSize="11sp"
+	    android:textColor="@color/text_color"
+	    android:layout_alignLeft="@id/tv_taskTitle"
+	    android:layout_below="@id/tv_taskTitle"/>
+	
+	<TextView 
+	    android:id="@+id/tv_time"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="5dp"
+	    android:text="申请时间:2015-10-22"
+	    android:layout_below="@id/tv_taskTitle"
+	    android:layout_alignParentRight="true"
+	    android:textColor="@color/text_color"
+	    android:textSize="11sp"/>
+</RelativeLayout>
