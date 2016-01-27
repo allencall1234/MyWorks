@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <ImageView 
+        android:id="@+id/iv_img"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/guide_img1"/>
+    
+    <TextView
+        android:id="@+id/tv_imgName" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_img"
+        android:layout_centerHorizontal="true"
+        android:text="维多利亚"
+        android:textSize="8sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

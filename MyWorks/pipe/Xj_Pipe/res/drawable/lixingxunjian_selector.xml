@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/lixingxunjian_selected" android:state_focused="true"></item>
+    <item android:drawable="@drawable/lixingxunjian_selected" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/lixingxunjian_normal" android:state_focused="false" android:state_pressed="false"></item>
+    <item android:drawable="@drawable/lixingxunjian_normal"></item>
+
+</selector>

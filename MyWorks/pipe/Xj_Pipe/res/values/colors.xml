@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="edittext_color">#A4CFF9</color>
+    <color name="black">#000000</color>
+    <color name="green">#0AC2B0</color>
+    <color name="orange">#FF9900</color>
+    <color name="yellow">#E2ED26</color>
+    <color name="red">#F4250E</color>
+    <color name="gray">#d6d9db</color>
+    <color name="light_gray">#888888</color>
+    <color name="tv_text_color">#646464</color>
+    <color name="login_nomal">#fd9b02</color>
+    <color name="login_pressed">#e38a01</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue_deep">#4A708B</color>
+    <!-- 菜单上按钮颜色 -->
+    <color name="text_pressed">#c0c0c0</color>
+    <color name="text_normal">#0aa</color>
+    
+    <!-- dialog上按钮背景颜色 -->
+    <color name="dialog_btn_pressed">#d0d0d0</color>
+    <color name="dialog_btn_normal">#fff</color>
+    <color name="dialog_btn_normal_single">#eee</color>
+    
+    <color name="map_btn_pressed">#ff9944</color>
+    <color name="map_btn_normal">#ff9900</color>
+    
+    <color name="inspect_function_check">#59bd64</color>
+    <color name="inspect_function_normal">#80cccc</color>
+</resources>

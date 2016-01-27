@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/guide_img5">
+    
+    <Button
+        android:id="@+id/btn_enterLogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:text="进入系统"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@drawable/enter_app_btn_selector"/>
+
+</RelativeLayout>

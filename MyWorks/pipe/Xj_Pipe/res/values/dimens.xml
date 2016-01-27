@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 界面字体大小 -->
+    <dimen name="tv_small_size">14sp</dimen>
+    <dimen name="tv_middle_size">16sp</dimen>
+    <dimen name="tv_big_size">18sp</dimen>
+    <!-- 二维码大小 -->
+    <dimen name="qr_size">150dp</dimen>
+
+    <!-- 文字大小 -->
+    <dimen name="textsize_small">14sp</dimen>
+    <dimen name="textsize_middle">15sp</dimen>
+    <dimen name="textsize_large">20sp</dimen>
+    <dimen name="textsize_title">25sp</dimen>
+    <!-- 确认按钮的宽和高 -->
+    <dimen name="comfirm_btn_width">80dp</dimen>
+    <dimen name="comfirm_btn_height">40dp</dimen>
+
+</resources>

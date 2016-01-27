@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_bg">
+    
+    <com.xj_pipe.xlistview.XListView
+        android:id="@+id/main_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+    </com.xj_pipe.xlistview.XListView>
+    
+    <include
+        android:id="@+id/main_empty_view"
+        layout="@layout/tv_not_load_information"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+

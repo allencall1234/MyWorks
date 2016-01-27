@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linkman_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/linkman_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:textColor="#D8E7F7"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/linkman_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linkman_name"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="巡检主管"
+            android:textColor="#A3CFF8"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/linkman_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_bg"
+    tools:context="com.xj_pipe.view.MessageDetailActivity" >
+    
+    <TextView
+	     android:id="@+id/send_name"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:background="@drawable/ll_bg"
+	     android:gravity="center_vertical"
+	     android:textColor="@color/white"
+	     android:drawableLeft="@drawable/message_detail_person"
+	     android:drawablePadding="5dp"
+	     android:text="张三" 
+	     android:layout_marginLeft="10dp"
+	     android:layout_marginRight="10dp"
+	     android:layout_marginTop="20dp"
+	     android:paddingLeft="5dp"
+	     android:textSize="15sp"/>
+
+    <TextView 
+        android:id="@+id/msg_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_describe_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@id/send_name"
+        android:text="发现管道有问题，需要及时处理，请速赶来7号桩进行解决，收到请回复！"
+        android:textColor="#9ECAF6"
+        android:textSize="15sp"/>
+    
+    <TextView 
+        android:id="@+id/msg_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msg_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:text="备注："
+        android:textSize="17sp"
+        android:visibility="gone"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/msg_remark"
+        android:text="发现管道有问题，需要及时处理，请速赶来7号桩进行解决，收到请回复！"
+        android:layout_margin="15dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/send_name"
+        android:layout_alignBottom="@+id/send_name"
+        android:layout_alignRight="@+id/send_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="2015-12-14 11:12"
+        android:textColor="@color/white" 
+        android:textSize="12sp"/>
+
+</RelativeLayout>

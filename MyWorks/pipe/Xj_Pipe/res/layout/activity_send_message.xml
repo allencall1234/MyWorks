@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_bg"
+    tools:context="com.xj_pipe.view.SendMessageActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/et_describe_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:text="接收人："
+            android:textSize="15sp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/send_message_person"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:textColor="#105DB8"
+            android:textSize="14sp"
+            android:background="#DEE9F6" />
+
+        <TextView
+            android:id="@+id/alert_linkman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:background="#00B3E0"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="修改"
+            android:textSize="14sp"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/send_msg_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#DEE9F6"
+            android:gravity="top"
+            android:hint="请输入信息内容……"
+            android:lines="3"
+            android:paddingBottom="10dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/tv_text_color"
+            android:textColorHint="#105DB8"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="#E08E00"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:clickable="true"
+            android:text="发送"
+            android:textSize="14sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

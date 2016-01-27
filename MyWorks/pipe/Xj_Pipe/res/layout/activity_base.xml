@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xj_pipe.base.BaseActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title_banner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bg" >
+
+        <TextView
+            android:id="@+id/title_banner_left"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:background="@drawable/more_btn_selector"/> 
+            
+       <ImageView 
+            android:id="@+id/iv_logo"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:src="@drawable/title_logo"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/> 
+
+        <TextView
+            android:id="@+id/tv_title_banner_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="管线巡检系统"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/title_banner_right"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:background="@drawable/more_btn_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+                             
+        <!-- <ImageView 
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_btn_normal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"/>      -->
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:state_focused="true">
+        
+        <shape >
+            <corners android:radius="8dp"/>
+            <solid android:color="@color/login_pressed"/>
+        </shape>
+    </item>
+    
+    <item android:state_pressed="true">
+        
+         <shape >
+            <corners android:radius="8dp"/>
+            <solid android:color="@color/login_pressed"/>
+        </shape>
+    </item>
+    
+    <item android:state_checked="true">
+        
+         <shape >
+            <corners android:radius="8dp"/>
+            <solid android:color="@color/login_pressed"/>
+        </shape>
+    </item>
+    
+    <item 
+        android:state_focused="false" 
+        android:state_pressed="false" 
+        android:state_checked="false"> 
+        
+         <shape >
+            <corners android:radius="8dp"/>
+            <solid android:color="@color/login_nomal"/>
+        </shape>
+    </item>
+    
+</selector>

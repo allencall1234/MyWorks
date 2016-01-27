@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/divider_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/menu_forChecking"
+            style="@style/menu_style"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/uninspection"
+            android:drawablePadding="5dp"
+            android:enabled="false"
+            android:focusable="true"
+            android:text="待巡检" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/divider_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/menu_inInspection"
+            style="@style/menu_style"
+            android:drawableLeft="@drawable/ininspection"
+            android:drawablePadding="5dp"
+            android:text="巡检中" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/menu_hasInspection"
+            style="@style/menu_style"
+            android:drawableLeft="@drawable/hasinspection"
+            android:drawablePadding="5dp"
+            android:text="已巡检" />
+    </LinearLayout>
+
+</LinearLayout>

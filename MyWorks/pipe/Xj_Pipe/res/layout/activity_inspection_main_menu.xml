@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/divider_bg"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/menu_showdetail"
+            style="@style/menu_style"
+            android:drawableLeft="@drawable/inspection_task_details"
+            android:drawablePadding="5dp"
+            android:text="显示详情" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/divider_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/menu_starttask"
+            style="@style/menu_style"
+            android:drawableLeft="@drawable/start_inspection"
+            android:drawablePadding="5dp"
+            android:text="开始巡检" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/divider_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/menu_submittask"
+            style="@style/menu_style"
+            android:drawableLeft="@drawable/submit_task"
+            android:drawablePadding="5dp"
+            android:text="提交任务" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/menu_takephoto"
+            style="@style/menu_style"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/take_picture"
+            android:drawablePadding="5dp"
+            android:text="拍照        " />
+    </LinearLayout>
+
+</LinearLayout>

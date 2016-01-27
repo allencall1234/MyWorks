@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主界面item -->
+    <array name="item_main">
+        <item>例行巡检</item>
+        <item>应急巡检</item>
+        <item>事故报修</item>
+        <item>突发事件</item>
+        <item>施工上报</item>
+        <item>消息</item>
+    </array>
+	
+    <string-array name="construct_area">
+        <item>aaelfj</item>
+        <item>aab</item>
+        <item>acd</item>
+        <item>bcd</item>
+        <item>adc</item>
+        <item>234a</item>
+        <item>213c</item>
+        <item>adse</item>
+        <item>afef</item>
+        <item>12e</item>
+        <item>a12</item>
+        <item>aaelfj</item>
+        <item>aab</item>
+        <item>acd</item>
+        <item>bcd</item>
+        <item>adc</item>
+        <item>234a</item>
+        <item>213c</item>
+        <item>adse</item>
+        <item>afef</item>
+        <item>12e</item>
+        <item>a12</item>
+        <item>aaelfj</item>
+        <item>aab</item>
+        <item>acd</item>
+        <item>bcd</item>
+        <item>adc</item>
+        <item>234a</item>
+        <item>213c</item>
+        <item>adse</item>
+        <item>afef</item>
+        <item>12e</item>
+        <item>a12</item>
+    </string-array>
+    
+    <string-array name="construct_line">
+        <item>线路1</item>
+        <item>线路2</item>
+        <item>线路3</item>
+        <item>线路4</item>
+        <item>线路5</item>
+        <item>线路6</item>
+        <item>线路7</item>
+    </string-array>
+    <!-- 管道巡检要素 -->
+    <string-array name="factor_title">
+        <item >管道本体</item>
+        <item >自然环境</item>
+        <item >人为因素</item>
+        <item >法律法规</item>
+    </string-array>
+   <!-- 管道本体 -->     
+    <string-array name="factor_pipe">
+        <item >管道损坏</item>
+        <item >管道悬空</item>
+        <item >存在人工取土</item>
+        <item >标志桩下沉</item>
+        <item >阴保桩损坏</item>
+        <item >管道沿线水面冒泡</item>
+        <item >管道裸露</item>
+        <item >标志桩被埋</item>
+        <item >沿线工程施工</item>
+        <item >法律不允许</item>
+        <item >管线断裂</item>
+        <item >管线本体位置</item>
+    </string-array>
+    <!-- 自然环境 -->
+    <string-array name="factor_nature">
+        <item>管线沿线植物枯萎</item>
+        <item>乱搭建</item>
+        <item>管线沿线异味</item>
+    </string-array>
+    <!-- 人为因素 -->
+    <string-array name="factor_person">
+        <item >标志桩丢失</item>
+        <item>存在重车在上方运行</item>
+    </string-array>
+    <!-- 法律法规 -->
+    <string-array name="factor_law" >
+        <item >法律不允许</item>
+    </string-array>
+    
+    <string-array name="inspection_state">
+        <item >未巡检</item>
+        <item >巡检中</item>
+        <item >已巡检</item>
+    </string-array>
+    <array name="state_drawable">
+        <item >0x7f020077</item>
+        <item >0x7f020078</item>
+        <item >0x7f020079</item>
+    </array>
+    <string-array name="emergency_state">
+        <item >待处理</item>
+        <item >处理中</item>
+        <item >已处理</item>
+    </string-array>
+    <string-array name="repair_state">
+        <item >未维修</item>
+        <item >已维修</item>
+    </string-array>
+</resources>

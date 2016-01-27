@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+			        android:layout_marginLeft="5dp"
+			        android:layout_marginRight="5dp"
+	                android:text="基本信息"
+	                android:textSize="@dimen/tv_big_size"/>
+                
+            </LinearLayout>
+            
+            <TextView 
+		        android:id="@+id/tv_inspectionPerson"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginRight="15dp"
+		        android:text="巡检员: 张三"
+		        android:textSize="@dimen/tv_middle_size"/>
+    
+		    <TextView 
+		        android:id="@+id/tv_inspectionArea"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginRight="15dp"
+		        android:text="巡检区域 : 东区管线"
+		        android:textSize="@dimen/tv_middle_size"/>
+		
+		    <TextView 
+		        android:id="@+id/tv_inspectionPoint"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginRight="15dp"
+		        android:text="巡检点 : 东区1#管线桩"
+		        android:textSize="@dimen/tv_middle_size"/>
+		    
+		    <TextView 
+		        android:id="@+id/tv_inspectionDate"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginRight="15dp"
+		        android:text="巡检日期 : 2015-9-6"
+		        android:textSize="@dimen/tv_middle_size"/>
+		    
+      </LinearLayout>
+     
+      <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:orientation="vertical">
+         
+            <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:text="巡检要素"
+		        android:textSize="@dimen/tv_big_size"/>
+
+	        <com.xj_pipe.common.FactorModule
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="10dp" />
+    
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/black"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+        
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:text="巡检结论 : "
+	        android:textSize="@dimen/tv_big_size"/>
+        
+        <RadioGroup 
+            android:id="@+id/rg_inspectionState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+            
+            <RadioButton
+                android:id="@+id/rb_pointNormal" 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="巡检点状态正常"
+                android:textColor="@drawable/radio_btn_selector"
+                android:checked="true"/>
+            
+            <RadioButton
+                android:id="@+id/rb_pointZhengGai" 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.0"
+                android:text="巡检点需要整改"
+                android:textColor="@drawable/radio_btn_selector"/>
+            
+        </RadioGroup>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不合格说明"
+            android:textSize="@dimen/tv_big_size" />
+
+        <EditText 
+            android:id="@+id/et_cause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="请输入不合格的原因..."
+            android:textSize="@dimen/tv_middle_size"
+            android:textColorHint="#4db8b8"
+            android:lines="3"
+	        android:gravity="top"
+	        android:paddingTop="5dp"
+	        android:paddingLeft="5dp"
+	        android:paddingBottom="10dp"
+            android:background="#c9EAEA"/>
+        
+     </LinearLayout>
+     
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+         
+         <TextView 
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="20dp"
+	         android:layout_marginLeft="5dp"
+	         android:layout_marginRight="5dp"
+	         android:text="现场照片"
+	         android:textSize="@dimen/tv_big_size"/>
+         
+     </LinearLayout>
+     
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:orientation="horizontal"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp" >
+
+          <com.xj_pipe.common.PhotoModule
+	           android:id="@+id/photo_module"
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_margin="10dp"
+	           android:background="@color/white"/>
+          
+     </LinearLayout>
+
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:orientation="horizontal"
+         android:padding="5dp">
+         
+         <Button 
+             android:id="@+id/btn_cancel"
+             android:layout_width="match_parent"
+             android:layout_height="47dp"
+             android:layout_weight="2.0"
+             android:background="@drawable/cancel_btn_selector"
+             android:text="取消"/>
+         
+         <Button
+             android:id="@+id/btn_confirm" 
+             android:layout_width="match_parent"
+             android:layout_height="47dp"
+             android:layout_weight="1.0"
+             android:layout_marginLeft="20dp"
+             android:background="@drawable/login_btn_selector"
+             android:text="确定"/>
+     </LinearLayout>
+     
+  </LinearLayout>
+  
+</ScrollView>

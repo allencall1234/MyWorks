@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_repairArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报修区域 : "
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_middle" />
+
+            <TextView
+                android:id="@+id/tv_repair_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="软件员二期"
+                android:textColor="#A0CCF7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_equipmentNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备编号 : "
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_middle" />
+
+            <TextView
+                android:id="@+id/tv_equipment_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456000"
+                android:textColor="#A0CCF7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/queipmentName_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_equipmentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备名称 : "
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_middle" />
+
+            <TextView
+                android:id="@+id/tv_equipment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="001号管道"
+                android:textColor="#A0CCF7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_buildDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="施工期限 : "
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_build_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-1-4至2016-1-7"
+                android:textColor="#A0CCF7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_isDealwith"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_isDealwith"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="现场是否处理完成 : "
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_middle" />
+
+            <TextView
+                android:id="@+id/tv_is_dealwith"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已处理"
+                android:textColor="#A0CCF7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ll_bg"
+                android:drawableLeft="@drawable/repair_point"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="报修点"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_middle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ll_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_longitude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.0"
+                    android:text="经度 :156.1391234555"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_latitude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1.0"
+                    android:text="纬度 :156.1393212345"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp" >
+
+            <com.esri.android.map.MapView
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/temp_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_inspectionElements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="@drawable/ll_bg"
+                android:drawableLeft="@drawable/inspection_elements"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="巡检要素"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_middle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/et_describe_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="  缺陷类型 : "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_accident_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="自然因素"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="存在问题 : "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_problem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="管线腐蚀"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fault_description_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="@drawable/ll_bg"
+                android:drawableLeft="@drawable/describe"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="故障描述"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_middle" />
+
+            <TextView
+                android:id="@+id/tv_fault_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_describe_bg"
+                android:padding="5dp"
+                android:text="  十二届全国人大常委会第十八次会议27日表决通过《中华人民共和国反恐怖主义法》。国家主席习近平签署第36号主席令予以公布。法律自2016年1月1日起施行。对恐怖主义作出明确定义反恐怖主义法共十章97条，对恐怖活动组织和人员的认定、安全防范、情报信息、调查、应对处置、国际合作、法律责任等方面进行了规定。“中国政府历来高度重视反恐怖主义法律制度建设，中国的反恐怖工作始终在法治轨道上进行。”国家反恐办副主任、公安部反恐怖局局长安卫星说，在现有法律规定基础上，制定一部专门的反恐怖主义法，既是当前打击恐怖主义的现实需要，也是我国的国际责任。"
+                android:textColor="@color/white" />
+        </LinearLayout><LinearLayout
+            android:id="@+id/ll_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="@drawable/ll_bg"
+                android:drawableLeft="@drawable/scene_picture"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="现场照片"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_middle" />
+
+            <com.xj_pipe.common.MyGridView
+                android:id="@+id/gv_scenePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/et_describe_bg"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:padding="10dp"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/et_describe_bg">                                                                                                                                                  ">
+    
+    <TextView 
+        android:id="@+id/tv_repair_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#D6E6F7"
+        android:text="海南省东方市"
+        android:textSize="@dimen/textsize_middle"/>
+    
+    <TextView 
+	    android:id="@+id/tv_inspectionState"
+	    android:layout_width="70dp"
+	    android:layout_height="wrap_content"
+	    android:text="未维修"
+	    android:textColor="@color/white"
+	    android:textSize="@dimen/tv_small_size"
+	    android:gravity="center"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/state0"/>
+    
+    <TextView 
+        android:id="@+id/tv_accident_discribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_repair_area"
+        android:layout_marginTop="12dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#A0CCF7"
+        android:text="事故描述事故描述事故描述事故描述事故描述事故描述事故描述事故描述事故描述"
+        android:textSize="13sp"/>
+    
+    <TextView 
+        android:id="@+id/tv_repair_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_accident_discribe"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:textColor="#9AC7F5"
+        android:text="发生时间 : 2015-5-16 12:45"
+        android:textSize="12sp"/>
+    
+
+</RelativeLayout>

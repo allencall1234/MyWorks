@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_submit_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="10dp" 
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_submit_one"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/repair_textview_bg"
+            android:gravity="center"
+            android:text="报修区域 :"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_middle" />
+
+        <EditText
+            android:id="@+id/et_submit_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/repair_edittext_bg"
+            android:hint="填写报修区域" 
+            android:textColorHint="@color/edittext_color"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_small"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_submit_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="10dp" 
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_equipmentNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/repair_textview_bg"
+            android:gravity="center"
+            android:text="设备编号 :"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_middle" />
+        
+        <AutoCompleteTextView
+            android:id="@+id/autotv_equipmentNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/repair_edittext_bg"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:paddingLeft="10dp"
+            android:completionThreshold="1"
+            android:dropDownHeight="wrap_content"
+            android:hint="填写设备编号"
+            android:textColorHint="@color/edittext_color"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_small"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+     <LinearLayout
+        android:id="@+id/ll_submit_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_submit_two"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/repair_textview_bg"
+            android:gravity="center"
+            android:text="设备名称 :"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_middle" />
+        
+        <EditText
+            android:id="@+id/et_submit_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/repair_edittext_bg"
+            android:hint="填写设备名称/可不填" 
+            android:textColorHint="@color/edittext_color"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_small"/>
+
+        <!-- <AutoCompleteTextView
+            android:id="@+id/handling_device"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/repair_edittext_bg"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:paddingLeft="10dp"
+            android:completionThreshold="1"
+            android:dropDownHeight="wrap_content"
+            android:hint="选择报修设备名称"
+            android:textColorHint="@color/edittext_color"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_small"
+            android:singleLine="true" /> -->
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_submit_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="10dp" 
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_submit_three"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/repair_textview_bg"
+            android:gravity="center"
+            android:text="设备编号 :"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_middle" />
+
+        <EditText
+            android:id="@+id/et_submit_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/repair_edittext_bg"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:paddingLeft="10dp"
+            android:hint="填写设备编号" 
+            android:textColorHint="@color/edittext_color"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_small"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_submit_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:paddingLeft="10dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/repair_textview_bg"
+            android:gravity="center"
+            android:text="施工期限 :"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_middle" />
+
+        <EditText
+            android:id="@+id/statr_time"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/repair_edittext_bg"
+            android:layout_marginLeft="1dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_small"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="至"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_middle" />
+
+        <EditText
+            android:id="@+id/end_time"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/repair_edittext_bg"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white" 
+            android:textSize="@dimen/textsize_small"/>
+    </LinearLayout>
+
+</LinearLayout>

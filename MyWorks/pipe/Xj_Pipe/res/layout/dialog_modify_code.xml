@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="#99232323" >
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#fff"
+        android:orientation="vertical"
+         >
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="用户信息修改"
+            />
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:background="#0aa" />
+        <!-- Content -->
+		<LinearLayout 
+		    android:layout_width="250dp"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="用户名"
+		            android:layout_marginLeft="10dp"/>
+		        <EditText 
+		            android:id="@+id/dialog_view_username"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginRight="5dp"
+		            android:text="张三"
+		            android:enabled="false"/>
+		    </LinearLayout>
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="原密码"
+		            android:layout_marginLeft="10dp"/>
+		        <EditText 
+		            android:id="@+id/dialog_view_precode"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginRight="5dp"
+		            android:hint="输入旧密码"
+		            android:inputType="numberPassword"/>
+		    </LinearLayout>
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="新密码"
+		            android:layout_marginLeft="10dp"/>
+		        <EditText 
+		            android:id="@+id/dialog_view_newcode"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginRight="5dp"
+		            android:hint="输入新密码"
+		            android:inputType="numberPassword"
+		            />
+		    </LinearLayout>
+		    <TextView 
+		        android:id="@+id/dialog_notice_view"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="5dp"
+		        android:text="密码不匹配,请重新输入"
+		        android:textColor="#f00"
+		        android:layout_marginLeft="10dp"
+		        android:visibility="gone"/>
+		</LinearLayout>
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/dialog_view_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#c0c0c0" 
+                android:background="@drawable/menu_btn_background"/>
+
+            <Button
+                android:id="@+id/dialog_view_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="修改"
+                android:textColor="#0aa"
+                android:background="@drawable/menu_btn_background" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

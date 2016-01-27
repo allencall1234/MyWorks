@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/ll_1" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="当前巡检任务 : "
+	        android:textSize="@dimen/tv_big_size"/>
+        
+        <TextView 
+            android:id="@+id/tv_currentInspectionTask"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="深圳软件园二期 "
+	        android:textSize="@dimen/tv_middle_size"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="计划巡检时间 : "
+	        android:textSize="@dimen/tv_big_size"/>
+        
+        <TextView 
+            android:id="@+id/tv_timeInterval"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="2015-12-5 "
+	        android:textSize="@dimen/tv_middle_size"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="开始巡检时间 : "
+	        android:textSize="@dimen/tv_big_size"/>
+        
+        <TextView 
+            android:id="@+id/tv_taskType"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="2015-12-1 "
+	        android:textSize="@dimen/tv_middle_size"/>
+        
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tv_inspectionLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="巡检路线  : "
+        android:textSize="@dimen/tv_big_size"/>
+    
+    <com.xj_pipe.xlistview.XListView
+        android:id="@+id/lv_inspectionPoint" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/tv_inspectionLine"/>
+        
+</RelativeLayout>
